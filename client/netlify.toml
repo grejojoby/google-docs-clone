@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/documents/*"
-  to = "/"
-  status = 301
-  
