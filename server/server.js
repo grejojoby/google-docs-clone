@@ -12,7 +12,7 @@ const defaultValue = ""
 const io = require('socket.io')(PORT, {
     cors: {
         // origin: 'https://lit-chamber-84718.herokuapp.com',
-        origin: 'https://609bdd26c5828300077757a4--optimistic-shockley-bfa68b.netlify.app/',
+        origin: '*',
         methods: ["GET", "POST"],
     },
 })
