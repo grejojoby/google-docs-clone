@@ -25,7 +25,7 @@ export default function TextEditor() {
 
     useEffect(() => {
         // const s = io("https://sheltered-brook-85391.herokuapp.com:5000")
-        const s = io("https://boiling-wildwood-02548.herokuapp.com:45622")
+        const s = io("https://boiling-wildwood-02548.herokuapp.com")
         setSocket(s)
 
         return () => {
