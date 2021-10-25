@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Document = require('./Document')
 const PORT = process.env.PORT || 3001
-mongoose.connect('mongodb+srv://admin:admingrejo@grejo1.arahw.mongodb.net/joDocs?retryWrites=true&w=majority', {
+mongoose.connect('MONGO_URL', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
@@ -11,7 +11,7 @@ console.log(PORT)
 const defaultValue = ""
 const io = require('socket.io')(PORT, {
     cors: {
-        // origin: 'https://lit-chamber-84718.herokuapp.com',
+        
         origin: '*',
         methods: ["GET", "POST"],
     },
